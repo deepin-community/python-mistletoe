@@ -1,5 +1,90 @@
-template-repository (1.0-1) unstable; urgency=medium
+python-mistletoe (1.3.0-1) unstable; urgency=medium
 
-  * Initial release
+  * New upstream version.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Stuart Prescott <stuart@debian.org>  Sun, 18 Feb 2024 16:04:26 +1100
+
+python-mistletoe (1.2.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - add new build-dep on pygments
+    - add new Suggests for pygments
+    - add new test-dependency for pygments
+
+ -- Stuart Prescott <stuart@debian.org>  Mon, 02 Oct 2023 12:32:05 +1100
+
+python-mistletoe (1.1.0-1) unstable; urgency=medium
+
+  [ Stuart Prescott ]
+  * Adopt package, with thanks to Jonas Smedegaard for the previous work
+    (Closes: #1044080)
+  * New upstream version (Closes: #1044062).
+  * Update lintian override info format in d/source/lintian-overrides on line
+    2-3.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository-Browse.
+  * Update standards version to 4.6.2, no changes needed.
+  * Don't install contrib directory as examples as it is now part of the
+    module itself.
+  * Build-depend on python3-all for arch:all package.
+  * Add missing build-depends on python3-parameterized.
+  * Add autopkgtest tests with unittests.
+
+  [ Jonas Smedegaard ]
+  * orphan package: set maintainer to Debian QA Group
+
+ -- Stuart Prescott <stuart@debian.org>  Fri, 18 Aug 2023 01:05:21 +1000
+
+python-mistletoe (0.8.2-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * update copyright info:
+    + use single Reference field for multiple entries
+  * update git-buildpackage config:
+    + use DEP-14 branch names debian/latest upstream/latest
+      (not debian/master upstream)
+    + add usage comment
+
+ -- Jonas Smedegaard <dr@jones.dk>  Wed, 16 Feb 2022 00:23:06 +0100
+
+python-mistletoe (0.8.1-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * tighten lintian overrides
+  * update copyright info: update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 19 Dec 2021 14:46:14 +0100
+
+python-mistletoe (0.8.0-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * declare compliance with Debian Policy 4.6.0
+  * modernize build rules to use debhelper 13 features
+  * simplify source helper script copyright-check
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 25 Nov 2021 14:40:39 +0100
+
+python-mistletoe (0.7.2-2) unstable; urgency=medium
+
+  * use debhelper compatibility level 13 (not 12)
+
+ -- Jonas Smedegaard <dr@jones.dk>  Thu, 16 Jul 2020 10:19:14 +0200
+
+python-mistletoe (0.7.2-1) experimental; urgency=low
+
+  * initial packaging
+    closes: bug#964258
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 05 Jul 2020 11:38:01 +0200
