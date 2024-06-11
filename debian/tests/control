@@ -1,0 +1,7 @@
+Tests: python3-mistletoe
+Restrictions: allow-stderr
+Depends:
+ python3-all,
+ python3-mistletoe,
+ python3-parameterized,
+ python3-pygments,
